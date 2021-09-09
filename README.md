@@ -45,8 +45,6 @@ edit the `flake.nix` to add the kernel dependencies which you want.
 
 ```nix flake.nix
 
-...
-
 # declare your python kernel deps
 env = pkgs.python3.withPackage (ps: with ps; [
   ipykernel
@@ -55,7 +53,7 @@ env = pkgs.python3.withPackage (ps: with ps; [
   scipy
   matplotlib
   seaborn
-]
+]);
 
 ...
 
