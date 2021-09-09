@@ -21,7 +21,10 @@ $ nix registry add hnakano863-templates github:hnakano863/nix-flake-templates
 You can use any template provided by this repo.
 
 ```console
-$ nix flake show templates
+$ nix flake show hnakano863-templates
+github:hnakano863/nix-flake-templates/ed7216272b7510356a77b88eda2a4948f902e4c2
+└───templates
+    └───jupyter-shell: template: jupyter kernel in virtual environment
 ```
 
 ```console
