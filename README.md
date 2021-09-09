@@ -64,7 +64,13 @@ drop into the shell
 $ nix develop
 
 $ jupyter notebook
+[I 14:52:11.926 NotebookApp] Jupyter Notebook 6.3.0 is running at:
+[I 14:52:11.926 NotebookApp] http://localhost:8888/
 ```
+
+then, you can select the kernel in the env.
+
+![jupyter kernel select](./imgs/nix-shell-kernel.png)
 
 Also, you can use the oridinary python shell
 
@@ -72,11 +78,13 @@ Also, you can use the oridinary python shell
 $ nix develop
 
 $ python
-
->> import pandas as pd
-
->> pd.__version__
-
+Python 3.8.11 (default, Jun 28 2021, 10:57:31)
+[GCC 10.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pandas as pd
+>>> pd.__version__
+'1.2.3'
+>>>
 ```
 
 and ipython shell.
@@ -85,9 +93,14 @@ and ipython shell.
 $ nix develop
 
 $ ipython
+Python 3.8.11 (default, Jun 28 2021, 10:57:31)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.21.0 -- An enhanced Interactive Python. Type '?' for help.
 
-[1] import pandas as pd
+In [1]: import pandas as pd
 
-[2] pd.__version__
+In [2]: pd.__version__
+Out[2]: '1.2.3'
 
+In [3]:
 ```
