@@ -10,6 +10,11 @@
         description = "jupyter kernel in virtual environment";
       };
 
+      standard-shell = {
+        path = ./standard-shell;
+        description = "A standard dev shell";
+      };
+
     };
 
   };
